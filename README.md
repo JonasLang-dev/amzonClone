@@ -7,14 +7,19 @@
    6. add default HTML code
    7. link to style.css
    8. create header, main and footer
-   9.  style elements
-2.  Display Products
-    1.  create products div
-    2.  add product attributes
-    3.  and link, image, name and price
+   9. style elements
+2. Display Products
+    1. create products div
+    2. add product attributes
+    3. and link, image, name and price
 3. Create React App
    1. yarn create @vitejs/app frontend
    2. Remove unused files
    3. copy index.html content to App.js
    4. copy style.css content to index.css
    5. replace class with className
+4. Create Rating and Product Component
+   1. create components/Rating.js
+   2. create div.rating
+   3. style div.rating, span and last span
+   4. Use Rating component
