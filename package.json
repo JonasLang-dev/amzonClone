@@ -1,0 +1,16 @@
+{
+  "name": "amazonClone",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": "https://github.com/supercutcat/amzonCLone.git",
+  "author": "supercutcat <supercutcat@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
