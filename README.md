@@ -90,4 +90,7 @@
     2. cartItems.length === 0 ? cart is empty
     3. show item image, name, qty and price
     4. Proceed to Checkout button
-    5. Implement remove from cart action 
+    5. Implement remove from cart action
+14. Implement Remove From Cart Action
+    1. create removeFormCart constants, actions and reducers
+    2. use action in CartScreen.js
