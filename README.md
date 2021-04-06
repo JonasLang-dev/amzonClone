@@ -72,3 +72,8 @@
    8. const dispatch = useDispatch()
    9. useEffect(() => dispatch({type: LOAD_PRODUCTS, payload:}))
    10. Add store to index.js
+10. Add Redux to Product Screen
+    1. create product details constants, actions and reduces
+    2. add reducer to store.js
+    3. use action in ProductScreen.js
+    4. add /api/products/:id to backend api
