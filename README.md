@@ -9,9 +9,9 @@
    8. create header, main and footer
    9. style elements
 2. Display Products
-    1. create products div
-    2. add product attributes
-    3. and link, image, name and price
+   1. create products div
+   2. add product attributes
+   3. and link, image, name and price
 3. Create React App
    1. yarn create @vitejs/app frontend
    2. Remove unused files
@@ -23,7 +23,7 @@
    2. create div.rating
    3. style div.rating, span and last span
    4. Use Rating component
-5. Build Product  Screen
+5. Build Product Screen
    1. Install react-router-dom
    2. Use BrowserRouter and Route for Home Screen
    3. Create HomeScreen.js
@@ -44,7 +44,7 @@
    10. create route for /api/products
    11. return products
    12. rum yarn start
-7. Load Products From  Backend
+7. Load Products From Backend
    1. edit HomeScreen.js
    2. define products, loading and error
    3. create useEffect
@@ -94,3 +94,15 @@
 14. Implement Remove From Cart Action
     1. create removeFormCart constants, actions and reducers
     2. use action in CartScreen.js
+15. Connect To MongoDB
+    1. npm install mongoose
+    2. connect to mongodb
+    3. create config.js
+    4. npm install dotenv
+    5. export MONGODB_URL
+    6. create models/userModel.js
+    7. create userSchema and userModel
+    8. create models/productModel.js
+    9. create productSchema and productModel
+    10. create userRoute
+    11. Seed sample data

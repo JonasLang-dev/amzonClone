@@ -10,7 +10,11 @@
   "author": "supercutcat <supercutcat@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.3",
+    "mongoose-timestamp": "^0.6.0",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
