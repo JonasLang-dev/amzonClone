@@ -112,11 +112,19 @@
     3. create productRoute
     4. Seed sample data 
 17. Create Sign-in Backend
-    1. create /signin api
+    1. create /signIn api
     2. check email and password
     3. generate token
     4. install json web token
     5. install dotenv
     6. return token
     7. test is using postman
- 
+18. Design SignIn Screen
+    1. create SignInScreen
+    2. render email and password fields
+    3. create signIn constants, actions and reducers
+    4. Update Header based on user login 
+19. Implement SignIn Action
+    1. create signIn constants, action and reducers
+    2. add reducer to store.js
+    3. use action in SignInScreen.js
