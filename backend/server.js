@@ -1,11 +1,15 @@
 import express from "express";
 import mongoose from "mongoose";
-import data from "./data.js";
+import dotenv from "dotenv";
 import productRouter from "./routers/productRouter.js";
 import userRouter from "./routers/userRouter.js";
 //if import ./data, it will be not found module
 
+dotenv.config();
+
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extensions: true }));
 mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/amazonClone", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
