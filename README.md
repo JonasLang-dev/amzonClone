@@ -110,7 +110,7 @@
     1. create models/productModel.js
     2. create productSchema and productModel
     3. create productRoute
-    4. Seed sample data 
+    4. Seed sample data
 17. Create Sign-in Backend
     1. create /signIn api
     2. check email and password
@@ -123,8 +123,16 @@
     1. create SignInScreen
     2. render email and password fields
     3. create signIn constants, actions and reducers
-    4. Update Header based on user login 
+    4. Update Header based on user login
 19. Implement SignIn Action
     1. create signIn constants, action and reducers
     2. add reducer to store.js
     3. use action in SignInScreen.js
+20. Create Register Screen and Backend API
+    1. create API for /api/users/register
+    2. insert new user to database
+    3. return user info and token
+    4. create RegisterScreen
+    5. Add fields
+    6. Style fields
+    7. Add screen to App.js
