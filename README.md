@@ -134,5 +134,10 @@
     3. return user info and token
     4. create RegisterScreen
     5. Add fields
-    6. Style fields
+    6. Style field
     7. Add screen to App.js
+21. Create Shipping Screen
+    1. create CheckoutStep.js component
+    2. create shipping fields
+    3. implement shipping fields
+    4. implement shipping constant, action and reducers
