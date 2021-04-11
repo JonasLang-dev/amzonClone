@@ -141,3 +141,6 @@
     2. create shipping fields
     3. implement shipping fields
     4. implement shipping constant, action and reducers
+22. Create Payment Screen
+    1. create payment fields
+    2. implements shipping constant, action and reducers

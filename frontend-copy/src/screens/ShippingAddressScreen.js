@@ -33,7 +33,7 @@ export default function ShippingAddressScreen(props) {
           <h1>Shipping Address</h1>
         </div>
         <div>
-          <label htmlFor="fullName">full Name</label>
+          <label htmlFor="fullName">Full Name</label>
           <input
             type="text"
             id="fullName"

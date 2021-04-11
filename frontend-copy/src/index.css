@@ -224,9 +224,8 @@ img.large {
   flex-direction: column;
   margin: 1rem;
 }
-.from label {
-  margin: 1rem;
-  display: block;
+.form  label {
+  margin: 1rem 0;
 }
 /* Dropdown */
 .dropdown {
