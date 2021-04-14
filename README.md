@@ -162,3 +162,10 @@
     4. load data witch useSelector
     5. show data like place order screen
     6. create order details constant, action and reducer
+27. Add PayPal Button
+    1. get client id from PayPal
+    2. set it in .env file
+    3. create route form /api/paypal/clientId
+    4. create getPaypalClientID in api.js
+    5. add paypal checkout script in OrderScreen
+    6. show paypal button
