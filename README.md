@@ -169,3 +169,8 @@
     4. create getPaypalClientID in api.js
     5. add paypal checkout script in OrderScreen
     6. show paypal button
+28. Implement Order Payment
+    1. update order after payment
+    2. create payOrder in api.js
+    3. create route for /:id/pay in orderReducer.js
+    4. reRender after pay order
