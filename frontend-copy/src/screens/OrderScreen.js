@@ -72,7 +72,7 @@ export default function OrderScreen(props) {
                 </p>
                 {order.isDelivered ? (
                   <MessageBox variant="success">
-                    Delivered at {order.DeliveredAt}
+                    Delivered at {order.deliveredAt}
                   </MessageBox>
                 ) : ( 
                   <MessageBox variant="danger">Not Delivered</MessageBox>
