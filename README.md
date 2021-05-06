@@ -182,3 +182,6 @@
 30. Display User Profile
     1. create user details api
     2. show user information
+31. Update User Profile
+    1. create user update api
+    2. update user info
