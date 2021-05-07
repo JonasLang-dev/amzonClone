@@ -45,7 +45,7 @@ export default function ProductListScreen(props) {
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th>ID</th>
