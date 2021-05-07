@@ -208,3 +208,8 @@
     1. define update api
     2. define product update constant, action and reducer
     3. use action in Product Edit Screen
+37. Upload Product Image
+    1. npm install multer
+    2. define upload router
+    3. create uploads folder
+    4. Handle frontend
