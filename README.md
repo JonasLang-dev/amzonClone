@@ -222,3 +222,6 @@
     2. create Order List Screen
     3. Add reducer to store
     4. show products on the screen
+40. Delete Order
+    1. create delete order action and reducer
+    2. add order delete action to order list
