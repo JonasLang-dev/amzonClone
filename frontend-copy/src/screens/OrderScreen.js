@@ -198,7 +198,11 @@ export default function OrderScreen(props) {
               )}
               {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                 <li>
-                  <button type="button" className="primary" onClick={deliverHandler}>
+                  <button
+                    type="button"
+                    className="primary"
+                    onClick={deliverHandler}
+                  >
                     {" "}
                     Deliver Order
                   </button>
