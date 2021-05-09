@@ -239,3 +239,11 @@
     8. Create mongodb atlbas database
     9. Set database connection in heroku env variables
     10. Commit and push
+43. List Users
+    1. build api for list users
+    2. create UserList Screen
+    3. create order details constants, action and reducer
+44. Delete Users
+    1. build api for delete users
+    2. create order details constants, action and reducer
+    3. Use action in UserListScreen
