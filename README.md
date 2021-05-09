@@ -228,3 +228,14 @@
 41. Deliver Order
     1. create constant, action and reducers for deliver order
     2. add order deliver action to order details screen
+42. Publish To Heroku
+    1. Create git repository
+    2. Create heroku account
+    3. install Heroku CLI
+    4. heroku login
+    5. heroku apps:create <yourname>amazon
+    6. Edit package.json for build script
+    7. Create Profile
+    8. Create mongodb atlbas database
+    9. Set database connection in heroku env variables
+    10. Commit and push

@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend-copy && yarn && yarn build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": "https://github.com/supercutcat/amzonClone.git",
@@ -25,5 +26,10 @@
     "eslint": "^7.23.0",
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "engines": {
+    "node": "15.13.0",
+    "npm": "7.7.6",
+    "yarn": "1.22.5"
   }
 }
