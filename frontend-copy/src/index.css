@@ -34,7 +34,7 @@ header {
 
 main {
   grid-area: main;
-  padding: 1rem
+  padding: 1rem;
 }
 
 footer {
@@ -138,6 +138,9 @@ a.brand {
 .row.top {
   align-items: flex-start;
 }
+.row.start {
+  justify-content: flex-start;
+}
 
 .col-1 {
   flex: 1 1 25rem;
@@ -145,8 +148,14 @@ a.brand {
 .col-2 {
   flex: 2 1 50rem;
 }
+.col-3 {
+  flex: 32 1 35rem;
+}
 .min-30 {
   min-width: 30rem;
+}
+.p-1 {
+  padding: 1rem;
 }
 /* Image */
 img {
@@ -230,7 +239,7 @@ img.large {
   flex-direction: column;
   margin: 1rem;
 }
-.form  label {
+.form label {
   margin: 1rem 0;
 }
 /* Dropdown */
@@ -274,7 +283,8 @@ img.large {
 .table tbody tr:nth-of-type(odd) {
   background-color: #f4f4f4;
 }
-.table td, .table th {
+.table td,
+.table th {
   text-align: left;
   border: 0.1rem solid #e4e4e4;
   padding: 0.5rem;

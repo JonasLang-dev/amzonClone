@@ -256,3 +256,6 @@
     3. list products for seller
     4. list orders for seller
     5. add Seller to Product List and Details Screen
+47. Create Seller Page and Carousel
+    1. create seller page
+    2. create seller carousel
