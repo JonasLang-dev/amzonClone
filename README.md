@@ -259,3 +259,7 @@
 47. Create Seller Page and Carousel
     1. create seller page
     2. create seller carousel
+48. Add Top seller Carousel
+    1. install react carousel
+    2. implement actions and reducers for top seller
+    3. use react carousel with data in Home Screen
