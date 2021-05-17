@@ -138,7 +138,9 @@ export const listUsers = () => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.get(`/api/users/top-sellers`);
+    const { data } = await Axios.get(`/api/users`, {
+      headers: { Authorization: `Bearer ${userInfo.token}` },
+    });
     dispatch({ type: USER_LIST_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -169,13 +171,8 @@ export const deleteUser = (userId) => async (dispatch, getState) => {
 };
 export const listTopSellers = () => async (dispatch, getState) => {
   dispatch({ type: USER_TOPSELLERS_LIST_REQUEST });
-  const {
-    userSignin: { userInfo },
-  } = getState();
   try {
-    const { data } = await Axios.get(`api/users`, {
-      headers: { Authorization: `Bearer ${userInfo.token}` },
-    });
+    const { data } = await Axios.get(`/api/users/top-sellers`);
     dispatch({ type: USER_TOPSELLERS_LIST_SUCCESS, payload: data });
   } catch (error) {
     const message =

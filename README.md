@@ -263,3 +263,5 @@
     1. install react carousel
     2. implement actions and reducers for top seller
     3. use react carousel with data in Home Screen
+49. Force Order Items From One Seller
+    1. update addToCart action to buy from one seller at an order
