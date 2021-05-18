@@ -21,14 +21,24 @@ import {
 } from "../constants/productConstants";
 
 export const listProducts =
-  ({ seller = "", name = "", category = "" }) =>
+  ({
+    ler = "",
+    e = "",
+    seller = "",
+    name = "",
+    category = "",
+    order = "",
+    min = 0,
+    max = 0,
+    rating = 0,
+  }) =>
   async (dispatch) => {
     dispatch({
       type: PRODUCT_LIST_REQUEST,
     });
     try {
       const { data } = await Axios.get(
-        `/api/products?seller=${seller}&name=${name}&category=${category}`
+        `/api/products?seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}`
       );
       dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
     } catch (error) {
@@ -70,13 +80,9 @@ export const createProduct = () => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.post(
-      "/api/products",
-      {},
-      {
-        headers: { Authorization: `Bearer ${userInfo.token}` },
-      }
-    );
+    const { data } = await Axios.post("/api/products", {
+      headers: { Authorization: `Bearer ${userInfo.token}` },
+    });
     dispatch({
       type: PRODUCT_CREATE_SUCCESS,
       payload: data.product,
