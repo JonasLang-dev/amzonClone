@@ -23,7 +23,7 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 6rem 1fr 5rem;
+  grid-template-rows: 2fr 7fr 1fr;
   height: 100%;
 }
 

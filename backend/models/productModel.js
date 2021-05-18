@@ -1,5 +1,15 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
+const reviewSchema = new Schema(
+  {
+    name: { type: String, required: true },
+    comment: { type: String, required: true },
+    rating: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 const productSchema = new Schema(
   {
@@ -13,6 +23,7 @@ const productSchema = new Schema(
     countInStock: { type: Number, required: true },
     rating: { type: Number, required: true },
     numReviews: { type: Number, required: true },
+    reviews: [reviewSchema],
   },
   {
     timestamps: true,

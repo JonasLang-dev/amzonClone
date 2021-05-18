@@ -279,3 +279,6 @@
     1. filter by price
     2. filter by rating
     3. sort by price, rating, ...
+53. Rate and Review Products
+    1. rate products
+    2. create actions and reducers

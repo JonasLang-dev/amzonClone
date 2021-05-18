@@ -208,6 +208,10 @@ export default function OrderScreen(props) {
                   </button>
                 </li>
               )}
+              {loadingDeliver && <LoadingBox></LoadingBox>}
+              {errorDeliver && (
+                <MessageBox variant="danger">{errorDeliver}</MessageBox>
+              )}
             </ul>
           </div>
         </div>
