@@ -2,21 +2,20 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { detailsUser, updateUserProfile } from "../actions/userActions";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
-import LoadingBox from "./../components/LoadingBox";
-import MessageBox from "./../components/MessageBox";
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
 
 export default function ProfileScreen() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
   const [sellerName, setSellerName] = useState("");
   const [sellerLogo, setSellerLogo] = useState("");
   const [sellerDescription, setSellerDescription] = useState("");
 
-  const userSignIn = useSelector((state) => state.userSignin);
-  const { userInfo } = userSignIn;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
   const userUpdateProfile = useSelector((state) => state.userUpdateProfile);
@@ -77,7 +76,7 @@ export default function ProfileScreen() {
             )}
             {successUpdate && (
               <MessageBox variant="success">
-                Profile Updated successfully
+                Profile Updated Successfully
               </MessageBox>
             )}
             <div>
@@ -94,7 +93,7 @@ export default function ProfileScreen() {
               <label htmlFor="email">Email</label>
               <input
                 id="email"
-                type="text"
+                type="email"
                 placeholder="Enter Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -110,11 +109,11 @@ export default function ProfileScreen() {
               />
             </div>
             <div>
-              <label htmlFor="confirmPassword">confirmPassword</label>
+              <label htmlFor="confirmPassword">confirm password</label>
               <input
                 id="confirmPassword"
                 type="password"
-                placeholder="Enter confirmPassword"
+                placeholder="Enter confirm password"
                 onChange={(e) => setConfirmPassword(e.target.value)}
               />
             </div>
